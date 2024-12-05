@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Divergent Art-Events</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+
+    /*internal css for the event boxes*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="Da_logo.jpeg" alt="divergent art logo" width="400" height="300"></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+        <div class="row">
+        <div class="column">
+            <div>
+                <div class="event-card">
+                <h2>Art Journaling Event</h2>
+                <p>Join us for a creative and inspiring virtual art journaling session! Explore your thoughts and express yourself in a welcoming space.</p>
+                <h3>What to Expect:</h3>
+                <ul>
+                  <li>Guided activities and creative prompts</li>
+                  <li>Supportive, judgment-free environment</li>
+                  <li>Opportunities to connect and share (optional)</li>
+                </ul>
+                <p><strong>When:</strong> Every First Saturday of the Month, 12-2 PM CST</p>
+                <p><strong>Where:</strong> Virtual</p>
+                <p>No experience needed—just bring a notebook, pen, and your creativity. Reserve your spot and let’s create together! 🎨</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="column">
+            <div>
+                <div class="event-card">
+                <h2>Monthly Game Night</h2>
+                <p>Join us for a fun and relaxed virtual Game Night! Connect with others, play games, and enjoy plenty of laughs.</p>
+                <h3>What to Expect:</h3>
+                <ul>
+                  <li>Trivia, party games, word games, and more</li>
+                  <li>Judgment-free, relaxed environment</li>
+                  <li>Good vibes and connections</li>
+                </ul>
+                <p><strong>When:</strong> Every 3rd Friday of the Month, 7-9 PM CST</p>
+                <p><strong>Where:</strong> Virtual</p>
+                <p>No experience needed—just bring snacks and your sense of fun. Mark your calendar, and we’ll see you there! 🎮</p>
+            </div>
+            </div>
+        </div>
+        
+        <div class="column">
+            <div class="event-card">
+            <div>
+                <h2>Brain Meet: Monthly Social Night</h2>
+                <p>Connect with like-minded individuals in a welcoming space! Join us for Brain Meet, a virtual social night designed to build meaningful connections.</p>
+                <h3>What to Expect:</h3>
+                <ul>
+                  <li>Casual conversations and fun icebreakers</li>
+                  <li>Supportive and inclusive environment</li>
+                  <li>Optional themed discussions or activities</li>
+                </ul>
+                <p><strong>When:</strong> Every 2nd Sunday of the Month, 3-5 PM CST</p>
+                <p><strong>Where:</strong> Virtual</p>
+                <p>Bring your favorite drink or snack and join us to feel seen, heard, and connected. See you there! 💬</p>
+              </div>
+            </div>
+        </div>
+        </div>
+        #Event selection forms
+                <form action="/submit" method="POST">
+                
+                    <p>Events:</p>
+
+                     <section>
+
+                            <label for="art journaling">Art journaling</label>
+                            <input type="checkbox" id="art journaling" name="event" value="activity">
+                            
+                            <label for="game night">Game Night</label>
+                            <input type="checkbox" id="game night" name="event" value="activity">
+                            
+                            <label for="brain meet">Brain Meet</label>
+                            <input type="checkbox" id="brain meet" name="event" value="activity">
+                            
+                 
+                    <br>
+                
+
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name">
+                            <label for="user-email">Email</label>
+                            <input type="email" id="user-email" name="user-email" placeholder="Enter your email">
+                            <input type="submit" value="Submit">
+
+                     </section>
+                </form>
+    </body>
+        <footer>
+             <p>&copy; Divergent Art</p>
+        </footer>
+    </html>

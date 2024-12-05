@@ -1,0 +1,397 @@
+/*  Styling for the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(223, 217, 182, 0.95);
+    padding: 10px 20px;
+  }
+  
+  nav .logo {
+    border-radius: 32%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 80px; /* Adds space between each link */
+  }
+  
+  nav ul li a {
+    font-family: cursive;
+    color: black;
+    text-decoration: none;
+    font-size: 35px;
+  }
+  /* for navigation bar Media query for screens smaller than 768px (like tablets or phones) */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 15px; /* Adds space below the logo */
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; /* Adjusts spacing between menu items */
+    width: 100%;
+    background-color: lightpink; /* Background color for menu on small screens */
+    padding: 15px; /* Adds padding for a neat look */
+    border-radius: 10px; /* Rounded corners for the menu container */
+  }
+
+  nav ul li a {
+    color: black; 
+    font-size: 18px; /* Slightly smaller font for smaller screens */
+  }
+
+  nav ul li a:hover {
+    color: #f9d423; /* Highlight color on hover for small screens */
+  }
+}
+img {
+  border-radius: 32%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+
+/* styling for home screen*/
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgba(223, 217, 182, 0.95);
+  margin: 48px;
+}
+  
+p {
+  color: rgba(0, 0, 0, 1);
+  font-size: 20px;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+/* Style the link */
+a {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: purple;
+}
+
+/* Button styling */
+button {
+  background-color: pink;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: lightblue;
+}
+
+button:active {
+  background-color: green;
+  transform: scale(0.98);
+}
+
+/*homepage welcome intro*/
+
+.homepage-intro {
+  background-color: #f9f4ff; 
+  color: #333333; 
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.homepage-intro h1 {
+  font-size: 2.5em;
+  color: #6a5acd; 
+  margin-bottom: 20px;
+}
+
+.homepage-intro p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.homepage-intro p:last-child {
+  font-weight: bold;
+  color: #4b0082; 
+}
+
+/* Form styles */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* Input, textarea, and button styling */
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  border-color: blue;
+  box-shadow: 0 0 8px gray;
+}
+
+/* Checkbox and radio button label styling when checked */
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+  font-weight: bold;
+  color: #4A90E2;
+}
+
+.event-card {
+  background-color: #f9f4ff; /* Light lavender background to match homepage */
+  color: #333333; /* Neutral dark text color */
+  font-family: 'Arial', sans-serif; /* Accessible font */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 20px auto;
+  max-width: 700px;
+  text-align: left;
+}
+
+.event-card h2 {
+  font-size: 2em;
+  color: #6a5acd; /* Vibrant purple for headings */
+  margin-bottom: 15px;
+}
+
+.event-card h3 {
+  font-size: 1.5em;
+  color: #4b0082; /* Dark purple for subheadings */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.event-card ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.event-card ul li {
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.event-card p strong {
+  color: #6a5acd; /* Highlight important details with purple */
+}
+
+
+/*Event Menu*/
+
+.sweet-treats {
+  background-color: #fff8e7; /* Warm pastel background */
+  color: #333333; /* Neutral dark text */
+  font-family: 'Arial', sans-serif; /* Accessible font */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.sweet-treats h2 {
+  font-size: 2em;
+  color: #ff8c42; /* Vibrant orange for heading */
+  margin-bottom: 15px;
+}
+
+.sweet-treats h3 {
+  font-size: 1.5em;
+  color: #ff6347; /* Tomato red for subheadings */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.sweet-treats ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.sweet-treats ul li {
+  margin-bottom: 10px;
+}
+
+.sweet-treats p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.treats-table {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #fff8e7; /* Light pastel background */
+}
+
+
+.treats-table th, .treats-table td {
+  border: 3px solid #ff8c42; /* Warm orange for borders */
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+
+.treats-table th {
+  background-color: #ff6347; /* Tomato red for headers */
+  color: white;
+}
+
+.treats-table tr:nth-child(even) {
+  background-color: #fff2d9; /* Light alternate row color */
+}
+
+.treats-table tr:hover {
+  background-color: #ffe3c4; /* Highlight row on hover */
+}
+
+.treats-table td {
+  font-weight: bold;
+  color: #333333;
+}
+
+
+/*contact page*/
+
+.contact-section {
+  background-color: #f9f4ff; /* Light lavender background */
+  color: #333333; /* Neutral dark text */
+  font-family: 'Arial', sans-serif; /* Accessible font */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.contact-section h1 {
+  font-size: 2.5em;
+  color: #6a5acd; /* Vibrant purple for the heading */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contact-section h3 {
+  font-size: 1.5em;
+  color: #4b0082; /* Dark purple for subheadings */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.contact-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.contact-section ul li {
+  margin-bottom: 10px;
+}
+
+/*event page*/
+
+.event-location {
+  background-color: #e6f7ff; /* Light blue background for a calm vibe */
+  color: #333333; /* Neutral dark text */
+  font-family: 'Arial', sans-serif; /* Accessible font */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.event-location h1 {
+  font-size: 2.5em;
+  color: #0073e6; /* Vibrant blue for the heading */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.event-location h3 {
+  font-size: 1.5em;
+  color: #005bb5; /* Darker blue for subheadings */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.event-location p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.event-location ol {
+  margin-left: 20px;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.event-location ol li {
+  margin-bottom: 10px;
+  color: #333333; /* Neutral text color */
+}
